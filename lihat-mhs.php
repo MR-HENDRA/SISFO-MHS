@@ -5,11 +5,11 @@
 </head>
 <body>
     
-    <h1 style="text-align: center">Daftar Mahasiswa</h1>
+    <h1 style="text-align: center">Daftar Mahasiswa Teknik Informatika</h1>
 
-    <a href="index.php">beranda</a>
+    <a href="index.php">Beranda</a>
     <br>
-    <a href="input-mhs.php">tambah mahasiswa</a>
+    <a href="input-mhs.php">Tambah Mahasiswa</a>
     <br>
     <br>
 
@@ -35,8 +35,9 @@
                         <td><?php echo $data["angkatan"] ?></td>
                         <td><?php echo $data["asal"] ?></td>
                         <td>
-                            <button>hapus</button>
+
                             <a href="edit-mhs.php?nim=<?php echo $data["nim"] ?>">edit</a>
+                            <a href="delete.php?nim=<?php echo $data["nim"] ?>">delete</a>
                         </td>
                     </tr>
                 <?php }
